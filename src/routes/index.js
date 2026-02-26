@@ -37,4 +37,8 @@ router.get('/test', (req, res) => {
   res.json({ status: 'test', timestamp: new Date().toISOString() });
 });
 
+router.get('/error', (req, res, next) => { 
+  next(new Error('Test error')); 
+});
+
 module.exports = router;
