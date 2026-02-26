@@ -30,7 +30,12 @@ router.get('/', (req, res) => {
  * Health check endpoint
  */
 router.get('/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  res.json({
+    status: 'ok',
+    uptime: process.uptime(),
+    timestamp: new Date().toISOString(),
+    memory: process.memoryUsage().rss,
+  });
 });
 
 router.get('/test', (req, res) => {
@@ -40,5 +45,7 @@ router.get('/test', (req, res) => {
 router.get('/error', (req, res, next) => { 
   next(new Error('Test error')); 
 });
+
+
 
 module.exports = router;
