@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/chinthanarathnayake/semantic-release-workshop/compare/v1.0.0...v1.0.1) (2026-02-26)
+
+
+### Bug Fixes
+
+* adding new user ([56ba3a0](https://github.com/chinthanarathnayake/semantic-release-workshop/commit/56ba3a0c0c97979d438d685cfc9f40fc7eeb567c))
+
 # 1.0.0 (2026-02-26)
 
 
